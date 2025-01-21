@@ -1129,6 +1129,7 @@ textarea.form-control {
   }
   .display-time{
     font-size: 36px;
+    padding: 0;
   }
   .weight_value h1{
     font-size: 45px;
