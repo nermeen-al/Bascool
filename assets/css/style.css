@@ -1120,3 +1120,18 @@ textarea.form-control {
 .widget_card {
   background-color: ;
 } */
+@media(max-width:767px){
+  .greeting__heading{
+    display: none;
+  }
+  .display-date{
+    font-size: 20px;
+  }
+  .display-time{
+    font-size: 36px;
+  }
+  .weight_value h1{
+    font-size: 45px;
+    text-align: end;
+  }
+}
