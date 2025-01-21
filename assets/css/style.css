@@ -444,9 +444,9 @@ aside .drop-thi li a {
   position: absolute;
   content: "";
   width: 2px;
-  height: calc(100% - 80px);
+  height: calc(100% - 32px);
   inset-inline-start: 0;
-  inset-block-start: 54px;
+  inset-block-start: 7px;
   background-color: #f2f4f8;
 }
 .reading_header{
@@ -454,6 +454,11 @@ aside .drop-thi li a {
   color: #495057;
   font-weight: 700;
   margin-block-end: 24px;
+  margin-block-start: 12px;
+}
+.reading_number{
+  font-size: 21px;
+  color: #101010
 }
 .basic_data{
   border-top: 3px solid #f2f4f8;
