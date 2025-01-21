@@ -425,11 +425,11 @@ aside .drop-thi li a {
   padding: 12px 0;
   color: #101010;
 }
-.weight_value h1{
+/* .weight_value h1{
   font-size: 78px;
   font-weight: 600;
   color: #101010;
-}
+} */
 .weight_value h1 span{
   font-size: 32px;
 }
@@ -444,9 +444,9 @@ aside .drop-thi li a {
   position: absolute;
   content: "";
   width: 2px;
-  height: calc(100% - 32px);
+  height: calc(100% - 24px);
   inset-inline-start: 0;
-  inset-block-start: 7px;
+  inset-block-start: 0;
   background-color: #f2f4f8;
 }
 .reading_header{
@@ -457,8 +457,15 @@ aside .drop-thi li a {
   margin-block-start: 12px;
 }
 .reading_number{
-  font-size: 21px;
-  color: #101010
+  font-size: 2rem;
+  background-color: #e9ecef;
+  color: #101010;
+  width: 100%;
+  font-weight: 600;
+  display: block;
+  padding-block: 24px;
+  text-align: center;
+  margin-block-end: 20px;
 }
 .basic_data{
   border-top: 3px solid #f2f4f8;
@@ -785,7 +792,7 @@ aside .drop-thi li a {
   overflow: hidden;
 }
 .widget .widget_title {
-  padding: 15px 25px;
+  padding: 0 25px;
   position: relative;
 }
 .widget .widget_title h3 {
