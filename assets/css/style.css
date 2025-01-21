@@ -8,7 +8,7 @@
   --black-color: #212121;
   --red-color: #fededc;
   --green-color: #2e9f4d;
-  --red-color-dark: #dc3545; /* Renamed to avoid duplication */
+  --red-color-dark: #dc3545;
 
   --border-radius-circle: 50%;
   --border-radius: 8px;
@@ -425,11 +425,6 @@ aside .drop-thi li a {
   padding: 12px 0;
   color: #101010;
 }
-/* .weight_value h1{
-  font-size: 78px;
-  font-weight: 600;
-  color: #101010;
-} */
 .weight_value h1 span{
   font-size: 32px;
 }
@@ -894,10 +889,10 @@ textarea.form-control {
   min-height: 120px;
   line-height: 25px !important;
 }
-.date_group .form-control {
+.date_group .form-control, .time_group .form-control{
   padding-inline-start: 55px;
 }
-.date_group i {
+.date_group i, .time_group i {
   position: absolute;
   bottom: 0;
   inset-inline-start: 0;
@@ -1118,20 +1113,6 @@ textarea.form-control {
 .light .widget .widget_title h3 {
   color: #243d7f;
 }
-/* .widget_card {
-  background-color: #fff;
-  border: 1px solid #eeeeee;
-  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-  overflow: hidden;
-  text-align: center;
-}
-.widget_card {
-  background-color: ;
-} */
 @media(max-width:767px){
   .greeting__heading{
     display: none;
