@@ -1,0 +1,1 @@
+$("select.readonly option").attr("disabled","disabled");
