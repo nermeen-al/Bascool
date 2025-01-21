@@ -7,25 +7,6 @@ $(window).on("load", function () {
 		$("body").css({ "overflow-y": "visible" });
 	});
 });
-/* Theme
-=============================*/
-$('#theme-toggle').click(function () {
-	$(this).toggleClass('switch');
-
-});
-document.addEventListener('DOMContentLoaded', () => {
-	const themeToggleBtn = document.getElementById('theme-toggle');
-	const body = document.body;
-	themeToggleBtn.addEventListener('click', () => {
-		if (body.classList.contains('light')) {
-			body.classList.remove('light');
-			body.classList.add('dark');
-		} else {
-			body.classList.remove('dark');
-			body.classList.add('light');
-		}
-	});
-});
 
 document.getElementById('directionSwitch').addEventListener('click', function () {
 	var docDirection = document.documentElement.dir;
