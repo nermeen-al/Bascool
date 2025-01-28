@@ -1,36 +1,28 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
   <head>
-    <!-- Meta Tags
+	<!-- Meta Tags
     ==============================-->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="keywords" content="" />
     <meta name="copyright" content="" />
     <title>برنامج بسكول</title>
-
+      
     <!-- Fave Icons
     ================================-->
     <link rel="shortcut icon" href="assets/images/logo.png" />
-
+      
     <!-- CSS Files
     ================================-->
     <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/vendor/select2/select2.min.css" />
     <link rel="stylesheet" href="assets/vendor/flatpicker/flatpickr.min.css" />
     <link rel="stylesheet" href="assets/vendor/datatable/datatables.min.css" />
     <link rel="stylesheet" href="assets/vendor/file/jpreview.css" />
-    <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
@@ -41,6 +33,34 @@
         <div class="dot2"></div>
       </div>
     </div>
+    	<!-- Start Modal -->
+      <div class="modal fade" id="add" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="add">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h3>اضافة سيارة</h3>
+              <div class="form-group">
+                <label>الكود</label>
+                <input type="text" class="form-control" disabled value="20"/>
+              </div>
+              <div class="form-group">
+                <label>رقم السيارة</label>
+                <input type="text" class="form-control" id="basic_data_drop1"/>
+              </div>
+              <div class="d-flex align-item-center justify-content-center">
+                <button type="button" class="link link--border" data-dismiss="modal" aria-label="Close">
+                  إلـغـاء
+                </button>
+                <button type="button" class="link" type="submit" id="add_basic_drop1_value">اضافة</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End Modal-->
     <aside>
       <button class="toggle-btn custom-btn">
         <i class="fa fa-times"></i>
@@ -50,7 +70,7 @@
       </a>
       <ul>
         <li>
-          <a href="index.html" class="drop-link active">
+          <a href="index.html" class="drop-link">
             <svg
               id="Layer_1"
               height="22"
@@ -72,7 +92,7 @@
           </a>
         </li>
         <li>
-          <a href="first-weight.html" class="drop-link">
+          <a href="first-weight.html" class="drop-link active">
             <?xml version="1.0"?>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -288,14 +308,7 @@
         ====================================-->
     <div class="dash_header d-flex align-items-center">
       <div class="col-12 d-flex align-items-center justify-content-between p-0">
-        <h2 class="greeting__heading">
-          مرحبا بك
-          <img
-            src="assets/images/sayhi.png"
-            class="d-inline"
-            alt="waving-hand-sign"
-          />
-        </h2>
+        <h2 class="greeting__heading">مرحبا بك <img src="assets/images/sayhi.png" class="d-inline" alt="waving-hand-sign"></h2>
         <a href="index.html" class="logo_icon">
           <img src="assets/images/logo.png" alt="" />
         </a>
@@ -353,7 +366,7 @@
               <div class="item-list new d-flex align-items-center">
                 <img src="assets/images/user2.jpg" />
                 <div class="item-content">
-                  منظومة برنامج بسكول برنامج بسكول
+                  منظومة برنامج بسكول برنامج بسكول 
                   <span> <i class="far fa-clock"> </i> الان </span>
                 </div>
               </div>
@@ -361,7 +374,7 @@
               <div class="item-list d-flex align-items-center">
                 <img src="assets/images/user3.jpg" />
                 <div class="item-content">
-                  منظومة برنامج بسكول برنامج بسكول
+                  منظومة برنامج بسكول برنامج بسكول 
                   <span> <i class="far fa-clock"> </i> 3 ساعة </span>
                 </div>
               </div>
@@ -370,7 +383,7 @@
               <div class="item-list d-flex align-items-center">
                 <img src="assets/images/user.jpg" />
                 <div class="item-content">
-                  منظومة برنامج بسكول برنامج بسكول
+                  منظومة برنامج بسكول برنامج بسكول 
                   <span> <i class="far fa-clock"> </i> 3 ساعة </span>
                 </div>
               </div>
@@ -379,7 +392,7 @@
               <div class="item-list d-flex align-items-center">
                 <img src="assets/images/user4.jpg" />
                 <div class="item-content">
-                  منظومة برنامج بسكول برنامج بسكول
+                  منظومة برنامج بسكول برنامج بسكول 
                   <span> <i class="far fa-clock"> </i> 3 ساعة </span>
                 </div>
               </div>
@@ -391,11 +404,7 @@
           </li>
           <li class="dropdown profile_link">
             <a class="fs-16 fw-500" data-toggle="dropdown">
-              <img
-                src="assets/images/user3.jpg"
-                alt=""
-                class="d-inline-block"
-              />
+              <img src="assets/images/user3.jpg" alt="" class="d-inline-block" />
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <a class="dropdown-item" href="#">
@@ -475,111 +484,198 @@
     </div>
     <!--End Header -->
     <div class="dashboard_content">
-      <div
-        class="widget_title d-flex justify-content-between align-items-center"
-      >
-      <div class="widget_main_card">
-        <div class="icon_container orange_con">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
-            <path d="M13 0H5C2.24 0 0 2.24 0 5V15C0 17.76 2.24 20 5 20H13C15.76 20 18 17.76 18 15V5C18 2.24 15.76 0 13 0ZM5.86 16.63C5.67 16.82 5.42 16.92 5.16 16.92C4.89 16.92 4.64 16.82 4.45 16.63C4.26 16.44 4.14999 16.19 4.14999 15.92C4.14999 15.66 4.26 15.4 4.45 15.21C4.54 15.12 4.65 15.05 4.77 15C5.02 14.9 5.28999 14.9 5.53999 15C5.59999 15.02 5.66001 15.05 5.71001 15.09C5.77001 15.12 5.82 15.17 5.86 15.21C6.05 15.4 6.16 15.66 6.16 15.92C6.16 16.19 6.05 16.44 5.86 16.63ZM4.14999 11.92C4.14999 11.79 4.18 11.66 4.23 11.54C4.28 11.41 4.35 11.31 4.45 11.21C4.68 10.98 5.03001 10.87 5.35001 10.94C5.41001 10.95 5.47999 10.97 5.53999 11C5.59999 11.02 5.66001 11.05 5.71001 11.09C5.77001 11.12 5.82 11.17 5.86 11.21C5.95 11.31 6.03 11.41 6.08 11.54C6.13 11.66 6.14999 11.79 6.14999 11.92C6.14999 12.19 6.05 12.44 5.86 12.63C5.67 12.82 5.42 12.92 5.16 12.92C5.02 12.92 4.89 12.89 4.77 12.84C4.65 12.79 4.54 12.72 4.45 12.63C4.26 12.44 4.14999 12.19 4.14999 11.92ZM9.86 16.63C9.77 16.72 9.65999 16.79 9.53999 16.84C9.41999 16.89 9.28999 16.92 9.14999 16.92C8.88999 16.92 8.64 16.82 8.45 16.63C8.26 16.44 8.14999 16.19 8.14999 15.92C8.14999 15.85 8.16 15.79 8.17 15.72C8.19 15.66 8.21 15.6 8.23 15.54C8.26 15.48 8.29001 15.42 8.32001 15.36C8.36001 15.31 8.4 15.26 8.45 15.21C8.54 15.12 8.65 15.05 8.77 15C9.14 14.85 9.58 14.93 9.86 15.21C10.05 15.4 10.15 15.66 10.15 15.92C10.15 16.19 10.05 16.44 9.86 16.63ZM9.86 12.63C9.67 12.82 9.41999 12.92 9.14999 12.92C8.88999 12.92 8.64 12.82 8.45 12.63C8.26 12.44 8.14999 12.19 8.14999 11.92C8.14999 11.66 8.26 11.4 8.45 11.21C8.82 10.84 9.49 10.84 9.86 11.21C9.95 11.31 10.03 11.41 10.08 11.54C10.13 11.66 10.15 11.79 10.15 11.92C10.15 12.19 10.05 12.44 9.86 12.63ZM6 8.46001C4.97 8.46001 4.12 7.62 4.12 6.58V5.58C4.12 4.55 4.96 3.7 6 3.7H12C13.03 3.7 13.88 4.54 13.88 5.58V6.58C13.88 7.61 13.04 8.46001 12 8.46001H6ZM13.86 16.63C13.67 16.82 13.42 16.92 13.15 16.92C13.02 16.92 12.89 16.89 12.77 16.84C12.65 16.79 12.54 16.72 12.45 16.63C12.26 16.44 12.16 16.19 12.16 15.92C12.16 15.66 12.26 15.4 12.45 15.21C12.72 14.93 13.17 14.85 13.54 15C13.66 15.05 13.77 15.12 13.86 15.21C14.05 15.4 14.15 15.66 14.15 15.92C14.15 16.19 14.05 16.44 13.86 16.63ZM14.08 12.3C14.03 12.42 13.96 12.53 13.86 12.63C13.67 12.82 13.42 12.92 13.15 12.92C12.89 12.92 12.64 12.82 12.45 12.63C12.26 12.44 12.15 12.19 12.15 11.92C12.15 11.66 12.26 11.4 12.45 11.21C12.82 10.84 13.49 10.84 13.86 11.21C14.05 11.4 14.16 11.66 14.16 11.92C14.16 12.05 14.13 12.18 14.08 12.3Z" fill="#FF9D2C"/>
-          </svg>
-        </div>
-        <h5>عدد الموازين اليوم</h5>
-        <h4>500</h4>
-      </div>
-      <div class="widget_main_card">
-        <div class="icon_container rose_con">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path d="M14.19 0H5.81C2.17 0 0 2.17 0 5.81V14.18C0 17.83 2.17 20 5.81 20H14.18C17.82 20 19.99 17.83 19.99 14.19V5.81C20 2.17 17.83 0 14.19 0ZM7.10999 14.9C7.10999 15.18 6.88999 15.4 6.60999 15.4H3.82001C3.54001 15.4 3.32001 15.18 3.32001 14.9V10.28C3.32001 9.65 3.82999 9.14 4.45999 9.14H6.60999C6.88999 9.14 7.10999 9.36 7.10999 9.64V14.9ZM11.89 14.9C11.89 15.18 11.67 15.4 11.39 15.4H8.60001C8.32001 15.4 8.10001 15.18 8.10001 14.9V5.74001C8.10001 5.11001 8.60999 4.60001 9.23999 4.60001H10.76C11.39 4.60001 11.9 5.11001 11.9 5.74001V14.9H11.89ZM16.68 14.9C16.68 15.18 16.46 15.4 16.18 15.4H13.39C13.11 15.4 12.89 15.18 12.89 14.9V11.35C12.89 11.07 13.11 10.85 13.39 10.85H15.54C16.17 10.85 16.68 11.36 16.68 11.99V14.9Z" fill="#F96BA6"/>
-          </svg>
-        </div>
-        <h5>عدد الوزن الأول</h5>
-        <h4>500</h4>
-      </div>
-      <div class="widget_main_card">
-        <div class="icon_container blue_con">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path d="M14.19 0H5.81C2.17 0 0 2.17 0 5.81V14.18C0 17.83 2.17 20 5.81 20H14.18C17.82 20 19.99 17.83 19.99 14.19V5.81C20 2.17 17.83 0 14.19 0ZM7.10999 14.9C7.10999 15.18 6.88999 15.4 6.60999 15.4H3.82001C3.54001 15.4 3.32001 15.18 3.32001 14.9V10.28C3.32001 9.65 3.82999 9.14 4.45999 9.14H6.60999C6.88999 9.14 7.10999 9.36 7.10999 9.64V14.9ZM11.89 14.9C11.89 15.18 11.67 15.4 11.39 15.4H8.60001C8.32001 15.4 8.10001 15.18 8.10001 14.9V5.74001C8.10001 5.11001 8.60999 4.60001 9.23999 4.60001H10.76C11.39 4.60001 11.9 5.11001 11.9 5.74001V14.9H11.89ZM16.68 14.9C16.68 15.18 16.46 15.4 16.18 15.4H13.39C13.11 15.4 12.89 15.18 12.89 14.9V11.35C12.89 11.07 13.11 10.85 13.39 10.85H15.54C16.17 10.85 16.68 11.36 16.68 11.99V14.9Z" fill="#4b80a8"/>
-          </svg>
-        </div>
-        <h5>عدد الوزن الثاني</h5>
-        <h4>500</h4>
-      </div>
-      </div>
-      <!-- Overview Cards -->
-      <div class="overview-cards">
-        <div class="card">
-          <div class="card-header">
-            <h3>المحطات النشطة</h3>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M3 3v18h18" />
-              <path d="m19 9-5 5-4-4-3 3" />
-            </svg>
+      <div class="widget">
+        <div class="widget_title d-md-flex  justify-content-between align-items-center ">
+          <div class="display-time"></div>
+          <div class="display-date">
+            <span id="day">day</span>,
+            <span id="daynum">00</span>
+            <span id="month">month</span>
+            <span id="year">0000</span>
           </div>
-          <p class="card-value">9</p>
         </div>
-        <div class="card">
-          <div class="card-header">
-            <h3>متوسط القراءات</h3>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M12 20V10" />
-              <path d="M18 20V4" />
-              <path d="M6 20v-4" />
-            </svg>
-          </div>
-          <p class="card-value">79.8</p>
+        <div class="widget_content">
+          <h4 class="section_title">بيانات الوزنة</h4>
+          <form action="">
+            <div class="row">
+              <div class="col-sm-12 col-md-4">
+                <span class="reading_number">500KG</span>
+                <h5 class="reading_header">قراءة أولي</h5>
+                <div class="form-group">
+                  <label>الوزن</label>
+                  <input type="text" class="form-control" value="499" disabled/>
+                </div>
+                <div class="form-group">
+                  <label>التكلفة <sup>*</sup></label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="form-group date_group">
+                  <label> تاريخ الدخول</label>
+                  <input type="text" class="flatpickr-input form-control en_font date" value="2025-01-20" disabled/>
+                  <i class="far fa-calendar-alt"></i>
+                </div>
+                <div class="form-group time_group">
+                  <label> وقت الدخول</label>
+                  <input type="text" class="flatpickr-input form-control en_font time" value="12:00" disabled/>
+                  <i class="far fa-clock"></i>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4 border_start">
+                <span class="reading_number">500KG</span>
+                <h5 class="reading_header">قراءة ثانية</h5>
+                <div class="form-group">
+                  <label>الوزن</label>
+                  <input type="text" class="form-control" value="499" disabled/>
+                </div>
+                <div class="form-group">
+                  <label>التكلفة <sup>*</sup></label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="form-group date_group">
+                  <label> تاريخ الدخول</label>
+                  <input type="text" class="flatpickr-input form-control en_font date" value="2025-01-20" disabled/>
+                  <i class="far fa-calendar-alt"></i>
+                </div>
+                <div class="form-group time_group">
+                  <label> وقت الدخول</label>
+                  <input type="text" class="flatpickr-input form-control en_font time" value="12:00" disabled/>
+                  <i class="far fa-clock"></i>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4 border_start">
+                <span class="reading_number">500KG</span>
+                <h5 class="reading_header">قراءة ثالثة</h5>
+                <div class="form-group">
+                  <label>الوزن</label>
+                  <input type="text" class="form-control" value="499" disabled/>
+                </div>
+                <div class="form-group">
+                  <label>التكلفة <sup>*</sup></label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="form-group date_group">
+                  <label> تاريخ الدخول</label>
+                  <input type="text" class="flatpickr-input form-control en_font date" value="2025-01-20" disabled/>
+                  <i class="far fa-calendar-alt"></i>
+                </div>
+                <div class="form-group time_group">
+                  <label> وقت الدخول</label>
+                  <input type="text" class="flatpickr-input form-control en_font time" value="12:00" disabled/>
+                  <i class="far fa-clock"></i>
+                </div>
+              </div>
+            </div>
+            <div class="row basic_data">
+              <div class="col-12">
+                <h4 class="section_title">البيانات الأساسية</h4>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="form-group">
+                  <label id="basic-data-label"> رقم السيارة <sup>*</sup></label>
+                  <select class="form-control select" id="basic_data_drop1_options">
+                    <option>1010</option>
+                    <option>1010</option>
+                    <option>1010</option>
+                  </select>
+                  <div class="select_add_btn" data-placement="top" title="اضافة" data-toggle="modal" data-target="#add">
+                    <i class="fa fa-plus"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="form-group">
+                  <label>المحافظة <sup>*</sup></label>
+                  <select class="form-control select">
+                    <option>القاهرة</option>
+                    <option>القاهرة</option>
+                  </select>
+                  <div class="select_add_btn" data-placement="top" title="اضافة" data-toggle="modal" data-target="#add">
+                    <i class="fa fa-plus"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="form-group">
+                  <label>العميل <sup>*</sup></label>
+                  <select class="form-control select">
+                    <option>اي تي حيكس</option>
+                    <option>اي تي حيكس</option>
+                  </select>
+                  <div class="select_add_btn" data-placement="top" title="اضافة" data-toggle="modal" data-target="#add">
+                    <i class="fa fa-plus"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="form-group">
+                  <label>الحمولة <sup>*</sup></label>
+                  <select class="form-control select">
+                    <option>الحمولة</option>
+                  </select>
+                  <div class="select_add_btn" data-placement="top" title="اضافة" data-toggle="modal" data-target="#add">
+                    <i class="fa fa-plus"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label>تص <sup>*</sup></label>
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label>تص <sup>*</sup></label>
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label>تص <sup>*</sup></label>
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label>تص <sup>*</sup></label>
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label> ملاحظات </label>
+                  <textarea class="form-control"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 d-flex align-items-center  justify-content-end form_action">
+              <div class="d-flex align-items-center btn_groups">
+  
+                <button class="link link--main-border">
+                  <i class="fa fa-plus"></i>
+                  إضافة جديد
+                </button>
+              </div>
+              <button type="submit" class="d-flex align-items-center link ">
+                <i class="fa fa-save"></i>
+                حفظ
+              </button>
+            </div>
         </div>
-        <div class="card">
-          <h3 class="gauge-label">صحة النظام</h3>
-          <canvas id="gauge-chart" width="200" height="120"></canvas>
-        </div>
-      </div>
-
-      <!-- Main Chart -->
-      <div class="chart-container card">
-        <h3>مختصر قراءات المحطات</h3>
-        <canvas id="line-chart" width="800" height="300"></canvas>
-      </div>
-
-      <!-- Station Grid -->
-      <div class="station-grid" id="station-grid">
-        <!-- Stations will be added here dynamically -->
       </div>
       <!--End Widget-->
     </div>
-    <!-- JS & Vendor Files
+	<!-- JS & Vendor Files
     ==========================================-->
     <script src="assets/vendor/jquery.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
     <script src="assets/vendor/select2/select2.min.js"></script>
     <script src="assets/vendor/flatpicker/flatpickr.js"></script>
     <script src="assets/vendor/counterto.js"></script>
-
+  
     <script src="assets/vendor/datatable/datatables.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
@@ -590,165 +686,22 @@
     <script src="assets/js/date-time.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-      const stationData = [
-        { id: 1, name: "محطة أولي", readings: [75, 82, 68] },
-        { id: 2, name: "محطة ثانية", readings: [65, 78, 72] },
-        { id: 3, name: "محطة ثالثة", readings: [88, 92, 85] },
-        { id: 4, name: "محطة رابعة", readings: [71, 75, 69] },
-        { id: 5, name: "محطة خامسة", readings: [95, 89, 92] },
-        { id: 6, name: "محطة سادسة", readings: [82, 85, 79] },
-        { id: 7, name: "محطة سابعة", readings: [68, 72, 65] },
-        { id: 8, name: "محطة ثامنة", readings: [90, 87, 93] },
-        { id: 9, name: "محطة تاسعة", readings: [77, 81, 74] },
-      ];
-
-      document.addEventListener("DOMContentLoaded", () => {
-        drawLineChart();
-        drawGaugeChart();
-        renderStationGrid();
-      });
-
-      function drawLineChart() {
-        const canvas = document.getElementById("line-chart");
-        const ctx = canvas.getContext("2d");
-
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-        ctx.strokeStyle = "#e5e7eb";
-        ctx.lineWidth = 1;
-
-        // Draw grid lines
-        for (let i = 0; i <= 10; i++) {
-          const x = 50 + i * 80;
-          ctx.beginPath();
-          ctx.moveTo(x, 50);
-          ctx.lineTo(x, 250);
-          ctx.stroke();
-        }
-
-        for (let i = 0; i <= 5; i++) {
-          const y = 50 + i * 40;
-          ctx.beginPath();
-          ctx.moveTo(50, y);
-          ctx.lineTo(770, y);
-          ctx.stroke();
-        }
-
-        ctx.beginPath();
-        ctx.strokeStyle = "#c9d2e4";
-        ctx.lineWidth = 2;
-
-        stationData.forEach((station, index) => {
-          station.readings.forEach((reading, readingIndex) => {
-            const x = 50 + index * 80;
-            const y = 250 - reading * 1.5;
-
-            if (readingIndex === 0 && index === 0) {
-              ctx.moveTo(x, y);
+      $(document).ready(function() {
+        $('#add_basic_drop1_value').on('click', function() {
+            var inputValue = $('#basic_data_drop1').val();
+            if (inputValue) {
+                var dropdown = $('#basic_data_drop1_options');
+                if (dropdown.find("option[value='" + inputValue + "']").length === 0) {
+                    var newOption = new Option(inputValue, inputValue);
+                    dropdown.append(newOption);
+                    $('#add').modal('hide');
+                } else {
+                    alert('هذا الخيار موجود بالفعل');
+                }
             } else {
-              ctx.lineTo(x, y);
+                alert('الرجاء إدخال قيمة');
             }
-
-            ctx.fillStyle = "#c9d2e4";
-            ctx.beginPath();
-            ctx.arc(x, y, 4, 0, Math.PI * 2);
-            ctx.fill();
-          });
         });
-
-        ctx.stroke();
-
-        ctx.fillStyle = "#1b5970";
-        ctx.font = "12px sans-serif";
-        stationData.forEach((station, index) => {
-          const x = 50 + index * 80;
-          ctx.fillText(station.name, x - 20, 270);
-        });
-      }
-
-      function drawGaugeChart() {
-        const canvas = document.getElementById("gauge-chart");
-        const ctx = canvas.getContext("2d");
-
-        const centerX = canvas.width / 2;
-        const centerY = canvas.height / 2;
-        const radius = 80;
-
-        ctx.beginPath();
-        ctx.arc(centerX, centerY, radius, Math.PI, 2 * Math.PI);
-        ctx.strokeStyle = "#1b5970";
-        ctx.lineWidth = 20;
-        ctx.stroke();
-        ctx.beginPath();
-        ctx.arc(centerX, centerY, radius, Math.PI, 1.8 * Math.PI);
-        ctx.strokeStyle = "#1b5970";
-        ctx.lineWidth = 20;
-        ctx.stroke();
-
-        ctx.fillStyle = "#1b5970";
-        ctx.font = "bold 24px sans-serif";
-        ctx.textAlign = "center";
-        ctx.fillText("80%", centerX, centerY + 10);
-      }
-
-      function renderStationGrid() {
-        const grid = document.getElementById("station-grid");
-        grid.innerHTML = "";
-
-        const card = document.createElement("div");
-        card.className = "station-card";
-
-        const html = `
-    <h3 class="dropdown-header">
-      محطات القراءة
-      <span class="dropdown-arrow">▼</span>
-    </h3>
-    <div class="dropdown-content">
-      ${stationData
-        .map(
-          (station) => `
-        <div class="station">
-          <h4>${station.name}</h4>
-          ${station.readings
-            .map(
-              (reading, index) => `
-            <div class="reading-row">
-              <span class="reading-label">Reading ${index + 1}</span>
-              <span class="reading-value">${reading}</span>
-            </div>
-          `
-            )
-            .join("")}
-        </div>
-      `
-        )
-        .join("")}
-    </div>
-  `;
-
-        card.innerHTML = html;
-        const header = card.querySelector(".dropdown-header");
-        const content = card.querySelector(".dropdown-content");
-        const arrow = card.querySelector(".dropdown-arrow");
-
-        header.addEventListener("click", () => {
-          if (card.classList.contains("open")) {
-            card.classList.remove("open");
-            content.style.maxHeight = "0";
-            arrow.textContent = "▼"; // Update the arrow to point down
-          } else {
-            card.classList.add("open");
-            content.style.maxHeight = `${content.scrollHeight}px`;
-            arrow.textContent = "▲"; // Update the arrow to point up
-          }
-        });
-
-        grid.appendChild(card);
-      }
-
-      document.getElementById("refresh-btn").addEventListener("click", () => {
-        drawLineChart();
-        drawGaugeChart();
       });
     </script>
   </body>
